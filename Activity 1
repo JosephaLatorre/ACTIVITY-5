@@ -1,0 +1,13 @@
+class BaseClass:
+    def __init__(self, value):
+        self._value = value  
+    def _show_value(self): 
+        print(self._value)
+
+class SubClass(BaseClass):
+    def display(self):
+        self._show_value()
+        
+obj = SubClass(10)
+obj.display() 
+print(obj._value)
